@@ -8,11 +8,16 @@ body{
     background-color: black;
 }
 p{
-    color:green;
+    color:brown;
+    font-weight: 900;
+    font-size: 1.2em;
     display: inline;
     position:absolute;
     top:6px;
     left:15px;
+}
+#dev{
+    top:100%;
 }
 #game-board{
     border:2px solid red;
@@ -34,13 +39,48 @@ p{
     border: .25vmin solid black;
 }
 .snakehead::before{
-    content: "o o";
+    content: "oo";
     font-weight: 900;
+    font-size: 3vmin;
+    padding-left:2px;
     color:greenyellow;
-    padding-left: 2px;
 }
 .food{
     background-color:yellow;
     border-radius: 50%;
     border: .25vmin solid black;
 }
+
+#buttons{
+    display:none;
+}
+button{
+    width: 70px;
+    height:40px;
+    font-weight: 700;
+    background-color: rgb(127, 127, 255);
+    border:none;
+    border-radius: 3px;
+    box-shadow: 2px 2px 10px blue;
+}
+@media (max-width:500px){
+    #buttons{
+        display:block;
+        position:absolute;
+        top:90vh;
+        margin-bottom:50px;
+    }
+    #point{
+        top:75vh;
+    }
+    #dev{
+        top:110%;
+    }
+    #up{
+        margin:0px 0px 10px 35%;
+    }
+    #down{
+        margin:0px 10px;
+    }
+}
+

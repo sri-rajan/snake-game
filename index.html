@@ -5,10 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>snake game</title>
     <link rel="stylesheet" href="style.css">
-    <script src="game.js" defer type="module"></script>
 </head>
 <body>
-    <p>score: <span id = "score">0</span></p>
     <div id="game-board"></div>
-</body>
+    <p id='point'>score: <span id = "score">0</span></p>
+    <div id="buttons">
+        <button id = "up"> UP </button><br>
+        <button id = "left"> LEFT </button>
+        <button id = "down"> DOWN </button>
+        <button id = "right"> RIGHT </button>
+    </div>
+    <p id="dev"> snake game by sri rajan</p>
+</body>   
+<script src="game.js" defer type="module"></script>
 </html>
