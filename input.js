@@ -45,3 +45,10 @@ export function getInputDirection(){
     lastInputDirection = inputDirection;
     return inputDirection;
 }
+
+// to prevent scrolling
+window.addEventListener("keydown", function(e) {
+    if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) {
+        e.preventDefault();
+    }
+}, false);
